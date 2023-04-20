@@ -1,30 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/IndexIvan/css/index.css">
     <!--Boostrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <title>Document</title>
 </head>
+
 <body>
-    <nav-element
-    element1="Inicio"
-    element2="quienes somos"
-    element3="Tienda"
-    element4="Ingenieria Biomedica"
-    element5="Recurso Gratuito"
-    element6="Soluciones"
-    element7="Webinars"
-    element8="Contacto"
-    ></nav-element>
+    <nav-element element1="Inicio" element2="quienes somos" element3="Tienda" element4="Ingenieria Biomedica"
+        element5="Recurso Gratuito" element6="Soluciones" element7="Webinars" element8="Contacto"></nav-element>
+    <card-element
+        img="https://www.masingenieria.com/wp-content/uploads/2021/07/Imagen-Ingenieria-Biomedica-1024x652.jpg"
+        title="biosell"></card-element>
 
+    <div class="cartas">
 
+        <bios-card
+            img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7c064W4LZ94yPcPIQyPUzRE3r_uyE4bJMew&usqp=CAU"
+            title="Equipo medico" description="Equipos a los mejores precios."></bios-card>
 
+        <bios-card
+            img="https://media.istockphoto.com/id/1140604785/es/vector/icono-de-vector-de-sensor-s%C3%ADmbolo-de-se%C3%B1al-dise%C3%B1o-simple-y-plano-para-aplicaciones-web-o.jpg?s=612x612&w=0&k=20&c=12bmGhPCE4plWRH9FPLw56st0ZRtkkX1A-DMNGusWjE="
+            title="Cables y sensores" description="Los mejores accesorios."></bios-card>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <bios-card
+            img="https://png.pngtree.com/element_our/20200702/ourlarge/pngtree-intelligent-operation-and-maintenance-management-and-maintenance-wisdom-image_2281526.jpg"
+            title="Mantenimiento" description="el personal mas capacitado para su equipo"></bios-card>
+
+        <bios-card img="https://img.freepik.com/vector-premium/planos-arquitectonicos-herramientas-dibujo_153097-69.jpg"
+            title="Desarrollo de proyects" description="Desarrollamos tus ideas y las plasmamos"></bios-card>
+
+        <bios-card
+            img="https://static.vecteezy.com/system/resources/previews/014/615/595/non_2x/look-for-confusing-ideas-or-problem-doubt-solutions-amazing-creative-answer-cartoon-exclamation-communication-think-smart-concept-with-flat-characters-vector.jpg"
+            title="Soluciones" description="Tenemos una respuesta para cada una de sus preguntas"></bios-card>
+    </div>
+
+    <div class="biosell-resumen">
+        <div class="biosell-img_container">
+            <img src="https://st4.depositphotos.com/1030956/19857/v/600/depositphotos_198571900-stock-illustration-caring-hands-hold-a-model.jpg"
+                alt="" class="biosell-img">
+        </div>
+        <div class="biosell-texto">
+            <h1>Biosell</h1>
+            <p>Somos una empresa con gran trayectoria en equipamiento médico, mantenimiento y subrogación de servicios
+                de ingeniería biomédica.
+            </p>
+            <p> Contamos con personal altamente capacitado y siempre comprometidos con la seguridad de tus pacientes.
+            </p>
+        </div>
+
+    </div>
+    <div class="productos">
+        <card-product
+            img="data:image/jpeg;base64,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"
+            title="Biomedica"
+            description="Biosell"
+            ></card-product>
+
+            <card-product></card-product>
+        <card-product></card-product>
+        <card-product></card-product>
+    </div>
+    <footer>
+        <h1>
+            biosell
+        </h1>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
     <script type="module" src="/IndexIvan/js/index.js"></script>
 </body>
+
 </html>

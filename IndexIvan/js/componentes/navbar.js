@@ -63,6 +63,7 @@ ${this.getStyles()}
   flex-direction:row;
         justify-content:center;
         aling-items:center;
+        height:50px;
 }
 
 
