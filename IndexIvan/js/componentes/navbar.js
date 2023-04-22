@@ -4,7 +4,9 @@ class Navbars extends HTMLElement{
         this.attachShadow({mode:'open'});
     }
     static get observedAttributes(){
-        return['element1','element2','element3','element4','element5','element6','element7','element8'];
+        return['element1','element2','element3','element4','element5','element6','element7','element8',
+        'link1','link2','link3','link4','link5','link6','link7','link8'
+    ];
     }
     attributeChangedCallback(attr, oldVal, newVal) {
         if (attr === "element1" && oldVal !== newVal) {
@@ -31,19 +33,43 @@ if (attr === "element7" && oldVal !== newVal) {
 if (attr === "element8" && oldVal !== newVal) {
     this.element8= newVal;
 }
+if (attr === "link1" && oldVal !== newVal) {
+    this.link1= newVal;
+}
+if (attr === "link2" && oldVal !== newVal) {
+    this.link2= newVal;
+}
+if (attr === "link3" && oldVal !== newVal) {
+    this.link3= newVal;
+}
+if (attr === "link4" && oldVal !== newVal) {
+    this.link4= newVal;
+}
+if (attr === "link5" && oldVal !== newVal) {
+    this.link5= newVal;
+}
+if (attr === "link6" && oldVal !== newVal) {
+    this.link6= newVal;
+}
+if (attr === "link7" && oldVal !== newVal) {
+    this.link7= newVal;
+}
+if (attr === "link8" && oldVal !== newVal) {
+    this.link8= newVal;
+}
     }
     getTemplate(){
         const template=document.createElement('template');
         template.innerHTML=`
         <ul>
-        <li><a class="active" href="#home">${this.element1}</a></li>
-        <li><a class="active" href="#home">${this.element2}</a></li>
-        <li><a class="active" href="#home">${this.element3}</a></li>
-        <li><a class="active" href="#home">${this.element4}</a></li>
-        <li><a class="active" href="#home">${this.element5}</a></li>
-        <li><a class="active" href="#home">${this.element6}</a></li>
-        <li><a class="active" href="#home">${this.element7}</a></li>
-        <li><a class="active" href="#home">${this.element8}</a></li>
+        <li><a class="active" href="${this.link1}">${this.element1}</a></li>
+        <li><a class="active" href="${this.link2}">${this.element2}</a></li>
+        <li><a class="active" href="${this.link3}">${this.element3}</a></li>
+        <li><a class="active" href="${this.link4}">${this.element4}</a></li>
+        <li><a class="active" href="${this.link5}">${this.element5}</a></li>
+        <li><a class="active" href="${this.link6}">${this.element6}</a></li>
+        <li><a class="active" href="${this.link7}">${this.element7}</a></li>
+        <li><a class="active" href="${this.link8}">${this.element8}</a></li>
       </ul>
       
 ${this.getStyles()}
