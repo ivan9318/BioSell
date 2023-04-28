@@ -6,7 +6,53 @@
 html{
     font-size: 62.5%;
 }
+.ventas{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  background-image: url('https://img.freepik.com/vector-premium/personaje-dibujos-animados-plana-equipo-medico-mascara-protectora-sobre-fondo-blanco-equipo-medico-enfermera_77116-460.jpg?w=2000');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.promo{
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    color: blue;
+}
+.promociones,.quirofano,.accesorios,.imagenologia{
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+    margin: 40px;
 
+}
+.promociones_cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.quirofano_cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.accesorios_cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr); 
+    gap: 20px;
+}
+.imagenologia_cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
 footer{
     width: 100%;
     height:50px;
