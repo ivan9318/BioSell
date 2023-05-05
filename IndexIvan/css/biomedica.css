@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.clinica{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 20px;
+}
+#clinica{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#img-clinic{
+    width: 80%;
+    height: 80%;
+}
+.mantenimiento{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 20px;
+}
+#mantenimiento{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#img-manten{
+    width: 80%;
+    height: 80%;
+}
+.support{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 20px;
+}
+#support{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#img-support{
+    width: 80%;
+    height: 80%;
+}
